@@ -2,40 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aleksandar Monchev – CEO, Newma Capital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aleksandar Monchev – CEO of Newma Capital</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #F9FAFB;
-      color: #1E3A3F;
-      text-align: center;
-      padding: 50px;
+      background-color: #1E3A3F;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #D4AF37;
     }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #E6E6E6;
+      margin-bottom: 20px;
+    }
+
     h1 {
-      font-weight: 600;
       font-size: 28px;
+      margin: 0 0 10px;
     }
-    p {
+
+    p.description {
       font-size: 18px;
-      margin: 10px 0;
-    }
-    a {
-      color: #1E3A3F;
-      text-decoration: none;
+      margin-bottom: 30px;
       font-weight: 500;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .bubble {
+      background-color: #E6E6E6;
+      color: #1E3A3F;
+      border-radius: 20px;
+      padding: 12px 20px;
+      margin: 10px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .bubble:hover {
+      background-color: #cccccc;
     }
   </style>
 </head>
 <body>
+
+  <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic" />
+
   <h1>Aleksandar Monchev</h1>
-  <p>CEO, Newma Capital</p>
-  <p><a href="https://www.linkedin.com/in/aleksandar-monchev-9a9ab1231/" target="_blank">LinkedIn Profile</a></p>
-  <p><a href="https://newma.ch" target="_blank">Company Website</a></p>
-  <p><a href="tel:+359988897719">Call: +359 98 889 7719</a></p>
+  <p class="description">CEO of Newma</p>
+
+  <a class="bubble" href="https://www.linkedin.com/in/aleksandar-monchev-9a9ab1231/" target="_blank">LinkedIn Profile</a>
+  <a class="bubble" href="https://newma.ch" target="_blank">Company Website</a>
+  <a class="bubble" href="tel:+359988897719">Call: +359 98 889 7719</a>
+
 </body>
 </html>
